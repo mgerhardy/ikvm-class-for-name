@@ -12,10 +12,10 @@ ikvm: $(NAME).jar GuiceRepro.cs
 
 compile-java:
 	mkdir -p $(BIN)
-	javac -d $(BIN) -classpath $(CLASSPATH) $$(find src/ -name "*.java")
+	javac -d $(BIN) $$(find src/ -name "*.java")
 
 %.jar: compile-java
-	cd $(BIN) && jar cf ../$(NAME).jar `find . -name "*.class"`
+	cd $(BIN) && jar cf ../$(NAME).jar foo/Launcher.class
 
 clean:
 	rm -rf $(BIN)
