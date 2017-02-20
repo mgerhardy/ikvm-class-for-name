@@ -22,3 +22,6 @@ clean:
 	rm -f $(NAME).jar
 	rm -f $(NAME).dll
 	rm -f $(NAME).exe
+
+disassemble: ikvm
+	monodis proof-of-concept.exe
