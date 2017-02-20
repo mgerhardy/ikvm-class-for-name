@@ -5,7 +5,7 @@ using System;
 //[assembly: IKVM.Attributes.NoPackagePrefixAttribute]
 namespace foo
 {
-	class Foo
+	public class Foo
 	{
 		public Foo()
 		{
