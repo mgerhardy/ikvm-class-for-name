@@ -25,3 +25,4 @@ clean:
 
 disassemble: ikvm
 	monodis proof-of-concept.exe
+	monodis $(NAME).dll
